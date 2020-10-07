@@ -2,6 +2,7 @@ import React, { useState } from "react";
 import { v4 as uuidv4 } from 'uuid';
 import "./App.css";
 import Form from "./components/Form";
+import Table from './components/Table';
 
 const App =  () => {
   const [title, setTitle] = useState('');
@@ -29,6 +30,7 @@ const App =  () => {
         setIsbn={setIsbn}
         currentBookId={currentBookId}
         />
+        <Table books={books} />
       </div>
     </div>
   );
