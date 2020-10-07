@@ -1,6 +1,7 @@
 import React, { useState } from "react";
 import { v4 as uuidv4 } from 'uuid';
 import "./App.css";
+import Form from "./components/Form";
 
 const App =  () => {
   const [title, setTitle] = useState('');
@@ -12,13 +13,23 @@ const App =  () => {
       bookTitle: title,
       bookAuthor: author,
       bookIsbn: isbn,
-      bookId: uuidv4()
-    }
-  ])
+      bookId: uuidv4(),
+    },
+  ]);
 
   return (
     <div className="App">
-      <h1>Welcome</h1>
+      <div className="container">
+        <Form
+        title={title}
+        setTitle={setTitle}
+        author={author}
+        setAuthor={setAuthor}
+        isbn={isbn}
+        setIsbn={setIsbn}
+        currentBookId={currentBookId}
+        />
+      </div>
     </div>
   );
 };
