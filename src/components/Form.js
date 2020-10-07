@@ -1,17 +1,19 @@
 import React from "react";
 
 const Form = (props) => {
-    const { title,
-        setTitle,
-        author,
-        setAuthor,
-        isbn,
-        setIsbn,
-        currentBookId,
+    const { 
+      title,
+      setTitle,
+      author,
+      setAuthor,
+      isbn,
+      setIsbn,
+      currentBookId,
+      handleSubmit,
     } = props;
 
   return (
-    <form>
+    <form onSubmit={handleSubmit}>
       <label>Title</label>
       <input
         autoFocus

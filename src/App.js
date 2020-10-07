@@ -11,12 +11,17 @@ const App =  () => {
   const [currentBookId, setCurrentBookId] = useState(null);
   const [books, setBooks] = useState([
     {
-      bookTitle: title,
-      bookAuthor: author,
-      bookIsbn: isbn,
+      bookTitle: "Book1",
+      bookAuthor: "John Doe",
+      bookIsbn: "9999",
       bookId: uuidv4(),
     },
   ]);
+
+
+  const handleSubmit = e => {
+    e.preventDefault();
+  };
 
   return (
     <div className="App">
@@ -29,6 +34,7 @@ const App =  () => {
         isbn={isbn}
         setIsbn={setIsbn}
         currentBookId={currentBookId}
+        handleSubmit={handleSubmit}
         />
         <Table books={books} />
       </div>
