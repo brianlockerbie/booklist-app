@@ -18,9 +18,22 @@ const App =  () => {
     },
   ]);
 
+  const addBook = () => {
+    setBooks([
+      ...books,
+      {
+        bookTitle: title,
+        bookAuthor: author,
+        bookIsbn: isbn,
+        bookId: uuidv4(),
+      },
+    ]);
+  };
 
   const handleSubmit = e => {
     e.preventDefault();
+
+    addBook();
   };
 
   return (
