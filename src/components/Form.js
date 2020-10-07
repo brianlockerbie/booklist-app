@@ -10,6 +10,7 @@ const Form = (props) => {
       setIsbn,
       currentBookId,
       handleSubmit,
+      cancelEdit,
     } = props;
 
   return (
@@ -36,9 +37,12 @@ const Form = (props) => {
         value={isbn}
         onChange={(e) => setIsbn(e.target.value)}
       /> 
-      <button tabIndex="0" type="submit">{currentBookId !== null ? "Update" : "Add"}</button>
-      </form>
-    );
+      <button tabIndex="0" type="submit">
+        {currentBookId !== null ? "Update" : "Add"}
+      </button>
+      {currentBookId !== null && <button onClick={cancelEdit}>Cancel</button>}
+    </form>
+  );
 };
 
 export default Form;
