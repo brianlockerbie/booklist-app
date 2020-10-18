@@ -6,9 +6,10 @@
 ## 🎮 How to use
 1. Type in the title, author and ISBN# then click to add book to the list.
 
-There are edit and delete icons beside each listed book. Edit mode has "update" and "cancel" buttons for your edditing needs.
+There are edit and delete icons beside each listed book. Edit mode has "update" and "cancel" buttons for your editing needs.
 ## 🚀 Features
 - Add, edit, delete a list of your favorite books.
+- Edit mode has "update" and "cancel" buttons.
 
 ## 🛠 Build setup
 Clone or fork the repository
