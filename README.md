@@ -2,7 +2,7 @@
 
 <p align="center">A book list app to add, edit & delete books in your own personalized list.</p>
 
-## 🕹 Live Demo: https://vigilant-pike-9283a6.netlify.app/
+## 🕹 Live Demo: https://react-booklist-app.netlify.app/
 
 
 ## 🎮 How to use
